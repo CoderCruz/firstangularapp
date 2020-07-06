@@ -4,20 +4,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningAlert } from './warningAlert/warningAlert.component'
 @NgModule({
   declarations: [
+    //Where you let your app know what components are apart of app
     AppComponent,
     ServerComponent,
-    ServersComponent,
-    WarningAlert
   ],
-  imports: [/*this is where you import packages to let typescript */
+  imports: [
+    /*this is where you import packages to let typescript */
     BrowserModule,
 
   ],
   providers: [],
+  //bootsrap is the component that angular recognizes when it starts
   bootstrap: [AppComponent]
 })
 export class AppModule { }

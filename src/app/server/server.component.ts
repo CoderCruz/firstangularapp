@@ -5,7 +5,8 @@ import { Component } from '@angular/core'
 @Component({
     //tell angular what to do with this class
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
 

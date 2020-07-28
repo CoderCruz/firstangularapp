@@ -9,6 +9,12 @@ import { Component } from '@angular/core'
     styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
+    //inside of class
+    serverId = 10;
+    serverStatus: string = 'offline' /*explicitily letting typescript know the data type */
 
+    getServerStatus () {
+        return this.serverStatus;
+    }
 }
 
